@@ -1,0 +1,22 @@
+
+
+.button{
+  width: 66px;
+  padding: 22px;
+  margin: 0 3px;
+  border: 2px solid black;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.row{
+  margin: 8px 0;
+}
+.row input{
+  width: 295px;
+  font-size: 20px;
+    margin: 0;
+    padding: 10px 0px;
+    border: 2px solid black;
+    border-radius: 13px;
+}

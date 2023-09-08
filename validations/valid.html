@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<p>number</p>
+
+ 
+<input id="numb">
+
+
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  
+  let x = document.getElementById("numb").value;
+
+  let text;
+  if (isNaN(x) || x < 1000000000 || x > 10000000000) {
+    text = "Input not valid";
+  } else {
+    text = "Input OK";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 

@@ -1,0 +1,18 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: gray;
+    border: 3px solid red;
+    display: flex;
+}
+.box{
+    border: 2px solid orange;
+    background-color: aqua;
+    height: 150px;
+    width: 150px;
+    margin:20px;
+
+}
+.box:hover{
+    background-color: brown;
+}

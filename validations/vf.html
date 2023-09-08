@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" method="post">
+        <div id="message"></div>
+        <input type="text" id="username" placeholder="Username"/><br><br>
+        <input type="password" id="password" placeholder="Password"/><br><br>
+        <input type="email" id="email" placeholder="Email" /><br><br>
+        
+        <input type="number" id="number" placeholder="Number"><br><br>
+        <input type="submit" value="required">
+    </form>
+</body>
+
+<script>
+    var form = document.getElementById('form')
+    var error = []
+    var success = " "
+    form.addEventListener('submit',function(e){
+     e.preventDefault() 
+     var username = document.getElementById('username')
+      var password = document.getElementById('password')
+      var number = document.getElementById('number')
+
+      if(username.value == ""){
+        error.push("please enter the username")
+      }
+      if(password.value == ""){
+        error.push("please enter the password")
+      }
+      if(isNaN(number) || number < 1000000000 || number > 10000000000){
+        error.push("please enter the correct number")
+      }
+      success = "Form is Submitted"
+    //   alert("form is submiited")
+      var message = document.getElementById('message')
+      message.innerText = error
+    })  
+</script>
+</html>

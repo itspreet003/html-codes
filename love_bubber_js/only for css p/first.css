@@ -1,0 +1,18 @@
+*{
+    background-color: blueviolet;
+}
+div{
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    margin: 5px;
+}
+#b{
+    position: absolute;
+    left: 200px;
+    right: 200px;
+}
+#c{
+    position: relative;
+
+}
